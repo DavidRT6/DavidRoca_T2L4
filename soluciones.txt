@@ -13,3 +13,9 @@
     sed -i 's/,/ /' derbi.txt
     cat derbi.txt | cut -d: -f3 | sort -fr
     cat derbi.txt | tail -n1,2 > valencia.txt
+
+5- touch levante.txt
+    sed -i 's/ /-/' derbi.txt
+    sed -i 's/,/ /' derbi.txt
+    cat derbi.txt | cut -d: -f3 | sort -fr
+    cat derbi.txt | head -n4,7 > levante.txt
