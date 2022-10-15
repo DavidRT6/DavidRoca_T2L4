@@ -1,3 +1,9 @@
 1- ls -l | sed ‘s/ \+/:/g’ --- ls –l | awk ‘{print $9”:”$5}’
 
 2- ls -l | sed ‘s/ \+/:/g’ --- ls –l | awk ‘{print $9”:”$5}’ | sort -rn
+
+3- touch empate.txt
+    sed -i 's/ /-/' derbi.txt
+    sed -i 's/,/ /' derbi.txt
+    cat derbi.txt | cut -d: -f3 | sort -r
+    cat derbi.txt | head -n3 > empate.txt
